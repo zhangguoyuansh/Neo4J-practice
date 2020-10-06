@@ -1,0 +1,10 @@
+FeeNo,type,hourlyPrice,carParkNo
+1002,VIP,40,3
+1001,student,20,2
+1003,student,20,3
+1004,student,25,4
+1005,VIP,20,2
+1006,VIP,20,3
+1007,staff,10,2
+1008,staff,5,3
+1009,manager,5,1

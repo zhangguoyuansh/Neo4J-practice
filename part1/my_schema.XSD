@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>	
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="my_xml">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CARPASS" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="_id" type="xs:int"/>
+						<xs:sequence>
+							<xs:element type="xs:string" name="PASSNO"/>
+							<xs:element type="xs.string" name="NAME"/>
+							<xs:element name= "LOCATION"/>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs.enumeration value="NORTH"/>
+										<xs.enumeration value="SOUTH"/>
+										<xs.enumeration value="EAST"/>
+										<xs.enumeration value="WEST"/>
+									</xs:restriction>
+								</xs:simpleType>
+							<xs:element name="REGISTRATION" maxOccurs="unbounded" minOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs.string" name="REGID"/>
+										<xs:element type="xs.string" name="NAMEEMPLOYEE"/>
+										<xs:element type="xs.string" name="CARNo"/>
+										<xs:element type="xs:string" name="SPOTNo"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence> 
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
